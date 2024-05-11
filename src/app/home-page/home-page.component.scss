@@ -1,27 +1,14 @@
 .container{
-  margin: 8px 8px 8px 0;
+  margin: 20px 20px 20px 20px;
   color: #FFFFFF;
-  .header{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 20px 20px;
-    .logo {
-    }
-    .header-buttons{
-      button{
-        font-family: system-ui;
-      }
-    }
-    .icons{
-      display: flex;
-      button{
-        background-color: #744BFC;
-        border-radius: 5px;
-        margin: 0 15px 15px 0;
-      }
-    }
-  }
   .body-container{
-    color: #EFF2FF;
+    .body-top{
+      .example-full-width{
+        input{
+          border-radius: 5rem;
+          background-color: white;
+        }
+      }
+    }
   }
 }
