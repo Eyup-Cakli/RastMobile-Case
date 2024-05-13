@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 20px 20px 20px 0px;
   .logo {
+    padding-right: 70px;
   }
   .header-buttons{
     display: flex;
@@ -10,6 +11,7 @@
     button{
       padding-right: 70px;
       font-family: system-ui;
+      font-weight: 600;
       font-size: 14px;
     }
   }

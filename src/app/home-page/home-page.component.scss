@@ -3,10 +3,90 @@
   color: #FFFFFF;
   .body-container{
     .body-top{
+      display: flex;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      background-color: #E8ECFF;
+      padding-top: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 20px;
       .example-full-width{
-        input{
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+        border-radius: 2rem;
+        background-color: white;
+        border: none;
+        height: 50px;
+        Input{
+          margin-left: 15px;
           border-radius: 5rem;
-          background-color: white;
+          background-color: #FFFFFF;
+          border: none;
+          height: 42px;
+          font-size: 14px;
+          font-family: system-ui;
+          font-weight: 600;
+          width: 380px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        button{
+          display: flex;
+          align-items: center;
+          color:white;
+          background-color: #744BFC;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 2rem;
+          border-bottom-right-radius: 2rem;
+          height: 50px;
+        }
+      }
+      .example-button-container{
+        margin-left: 10px;
+        margin-right: 100px;
+        display: flex;
+        align-items: center;
+        button{
+          height: 42px;
+          width: 49px;
+          mat-icon{
+            color: #744BFC
+          }
+        }
+      }
+      .container-create-button{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        button{
+          font-size: 14px;
+          font-family: system-ui;
+          font-weight: 600;
+          background-color: #744BFC;
+          color: white;
+          border-radius: 2rem;
+          mat-icon{
+            color: white;
+          }
+        }
+      }
+    }
+    .body-center{
+      padding-top: 0px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background-color: #E8ECFF;
+      .mat-elevation-z8{
+        table{
+          border-radius: 1rem;
         }
       }
     }
