@@ -10,6 +10,8 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { socialMediaData } from '../../models/social-media-list';
 import { SocialMediaModel } from '../../models/social-media-model';
+import { MatDialog } from '@angular/material/dialog';
+import { HomePageFormComponent } from '../form-screens/home-page-form/home-page-form.component';
 
 @Component({
   selector: 'app-home-page',
@@ -44,13 +46,25 @@ export class HomePageComponent implements AfterViewInit {
   @ViewChild(MatSort)
   sort!: MatSort;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     this.dataSource = new MatTableDataSource(socialMediaData);
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+  }
+
+  openAddFormScreen() {
+    this.dialog.open(HomePageFormComponent, {
+      data: "",
+      disableClose: true,
+      autoFocus: true
+    })
+  }
+
+  addSocialMedia() {
+    this.openAddFormScreen();
   }
 
   applyFilter(event: Event) {

@@ -1,0 +1,32 @@
+.container{
+  margin: 20px 20px 20px 20px;
+  display: flex;
+  width: 488px;
+  height: 406px;
+  .example-form{
+    display: grid;
+    width: 100%;
+    .exit-button{
+      margin-left: auto;
+    }
+    .social-media-link{
+      border-radius: 2rem;
+      input{
+        border-radius: 2rem;
+      }
+    }
+    .buttons{
+      margin-left: auto;
+      .cancel-button{
+        color: #744BFC;
+        border-radius: 2rem;
+      }
+      .save-button{
+        background-color: #744BFC;
+        color: white;
+        border-radius: 2rem;
+        margin-left: 10px;
+      }
+    }
+  }
+}
