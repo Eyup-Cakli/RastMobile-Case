@@ -35,3 +35,10 @@ Since I'm not using an API in the project, I haven't created a service. You can 
 
 https://github.com/Eyup-Cakli/SimpleOrderingProject2/tree/master/UIPreparation/UI
 https://github.com/Eyup-Cakli/16-angular-strapiBoatManufacturer
+
+## What I understand from the case
+
+- Creating the page layout by writing HTML and CSS codes based on the design drawn in Figma.
+- Listing the data in a table, filtering it, and being able to sort it according to the headers in each column.
+- Creating a form screen for adding operations.
+- Creating separate components for the header and the form screen.
