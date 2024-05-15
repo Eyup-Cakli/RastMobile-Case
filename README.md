@@ -33,8 +33,8 @@ Download the project to your computer. Open the project with the Visual Studio C
 ## 
 Since I'm not using an API in the project, I haven't created a service. You can review my work related to services by checking the following GitHub links.
 
-https://github.com/Eyup-Cakli/SimpleOrderingProject2/tree/master/UIPreparation/UI
-https://github.com/Eyup-Cakli/16-angular-strapiBoatManufacturer
+- https://github.com/Eyup-Cakli/SimpleOrderingProject2/tree/master/UIPreparation/UI
+- https://github.com/Eyup-Cakli/16-angular-strapiBoatManufacturer
 
 ## What I understand from the case
 
