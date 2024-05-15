@@ -1,17 +1,17 @@
-.container{
+.container {
   margin: 20px 20px 20px 20px;
-  color: #FFFFFF;
-  .body-container{
-    .body-top{
+  color: #ffffff;
+  .body-container {
+    .body-top {
       display: flex;
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem;
-      background-color: #E8ECFF;
+      background-color: #e8ecff;
       padding-top: 30px;
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 20px;
-      .example-full-width{
+      .example-full-width {
         display: flex;
         align-items: center;
         padding-right: 0;
@@ -19,10 +19,10 @@
         background-color: white;
         border: none;
         height: 50px;
-        Input{
+        Input {
           margin-left: 15px;
           border-radius: 5rem;
-          background-color: #FFFFFF;
+          background-color: #ffffff;
           border: none;
           height: 42px;
           font-size: 14px;
@@ -34,11 +34,11 @@
             outline: none;
           }
         }
-        button{
+        button {
           display: flex;
           align-items: center;
-          color:white;
-          background-color: #744BFC;
+          color: white;
+          background-color: #744bfc;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
           border-top-right-radius: 2rem;
@@ -46,49 +46,57 @@
           height: 50px;
         }
       }
-      .example-button-container{
+      .example-button-container {
         margin-left: 10px;
         margin-right: 100px;
         display: flex;
         align-items: center;
-        button{
+        button {
           height: 42px;
           width: 49px;
-          mat-icon{
-            color: #744BFC
+          mat-icon {
+            color: #744bfc;
           }
         }
       }
-      .container-create-button{
+      .container-create-button {
         display: flex;
         align-items: center;
         margin-left: auto;
-        button{
+        button {
           font-size: 14px;
           font-family: system-ui;
           font-weight: 600;
-          background-color: #744BFC;
+          background-color: #744bfc;
           color: white;
           border-radius: 2rem;
-          mat-icon{
+          mat-icon {
             color: white;
           }
         }
       }
     }
-    .body-center{
+    .body-center {
       padding-top: 0px;
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 50px;
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
-      background-color: #E8ECFF;
-      .mat-elevation-z8{
-        table{
+      background-color: #e8ecff;
+      .mat-elevation-z8 {
+        table {
           border-radius: 1rem;
         }
       }
     }
   }
+}
+
+.mat-elevation-z8 table tr:nth-child(even) {
+  background-color: #EFF2FF ; /* Çift sıradaki satırlar için gri arka plan rengi */
+}
+
+.mat-elevation-z8 table tr:nth-child(odd) {
+  background-color: #ffffff; /* Tek sıradaki satırlar için beyaz arka plan rengi */
 }

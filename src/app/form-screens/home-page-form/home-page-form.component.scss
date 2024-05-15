@@ -1,28 +1,26 @@
-.container{
+.container {
   margin: 20px 20px 20px 20px;
   display: flex;
   width: 488px;
-  height: 406px;
-  .example-form{
+  height: max-content;
+  .example-form {
     display: grid;
     width: 100%;
-    .exit-button{
+    .exit-button {
       margin-left: auto;
     }
-    .social-media-link{
-      border-radius: 2rem;
-      input{
-        border-radius: 2rem;
+    .social-media-link {
+      Input {
       }
     }
-    .buttons{
+    .buttons {
       margin-left: auto;
-      .cancel-button{
-        color: #744BFC;
+      .cancel-button {
+        color: #744bfc;
         border-radius: 2rem;
       }
-      .save-button{
-        background-color: #744BFC;
+      .save-button {
+        background-color: #744bfc;
         color: white;
         border-radius: 2rem;
         margin-left: 10px;

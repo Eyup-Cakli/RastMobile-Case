@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -12,6 +12,7 @@ import { socialMediaData } from '../../models/social-media-list';
 import { SocialMediaModel } from '../../models/social-media-model';
 import { MatDialog } from '@angular/material/dialog';
 import { HomePageFormComponent } from '../form-screens/home-page-form/home-page-form.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home-page',
@@ -28,26 +29,26 @@ import { HomePageFormComponent } from '../form-screens/home-page-form/home-page-
     MatInputModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    LayoutModule,
   ],
 })
-export class HomePageComponent implements AfterViewInit {
+export class HomePageComponent implements AfterViewInit, OnInit {
   socialMediaData: SocialMediaModel[] = socialMediaData;
-  displayedColumns: string[] = [
-    "id",
-    "link",
-    "name",
-    "description"
-  ];
-  dataSource= new MatTableDataSource(socialMediaData);
+  displayedColumns: string[] = ['id', 'link', 'name', 'description'];
+  dataSource = new MatTableDataSource(socialMediaData);
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
   @ViewChild(MatSort)
   sort!: MatSort;
 
-  constructor(public dialog: MatDialog) {
-    this.dataSource = new MatTableDataSource(socialMediaData);
+  constructor(
+    public dialog: MatDialog
+  ) {
+  }
+
+  ngOnInit() {
   }
 
   ngAfterViewInit() {
@@ -55,16 +56,16 @@ export class HomePageComponent implements AfterViewInit {
     this.dataSource.sort = this.sort;
   }
 
-  openAddFormScreen() {
-    this.dialog.open(HomePageFormComponent, {
-      data: "",
-      disableClose: true,
-      autoFocus: true
-    })
-  }
-
   addSocialMedia() {
-    this.openAddFormScreen();
+    this.dialog.open(HomePageFormComponent, {
+      data: '',
+      disableClose: true,
+      autoFocus: true,
+    }).afterClosed().subscribe(result => {
+      console.log("result: ", result.data);
+      this.socialMediaData.push(...result);
+      this.dataSource._updateChangeSubscription();
+    });
   }
 
   applyFilter(event: Event) {
