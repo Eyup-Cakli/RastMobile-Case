@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Run project
+Download the project to your computer. Open the project with the Visual Studio Code extension. Run the 'npm install' command in the VS Code terminal. Then, to launch the project, execute the 'ng serve' command in the VS Code terminal.
+
+## 
+Since I'm not using an API in the project, I haven't created a service. You can review my work related to services by checking the following GitHub links.
+
+https://github.com/Eyup-Cakli/SimpleOrderingProject2/tree/master/UIPreparation/UI
+https://github.com/Eyup-Cakli/16-angular-strapiBoatManufacturer
